@@ -5,7 +5,6 @@
   font-family: 'Poppins', sans-serif;
 }
 section {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,14 +32,14 @@ section .container .contact_info {
   position: absolute;
   top: 40px;
   width: 350px;
-  height: cal(100% - 80px);
+  height: calc(100% - 80px);
   background-color: #0f3959;
   z-index: 1;
   padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
 }
 section .container .contact_info h2 {
   color: white;
@@ -57,7 +56,8 @@ section .container .contact_info .info li {
   display: flex;
   margin: 20px 0;
   cursor: pointer;
-  align-items: flex-start;
+  justify-content: flex-start;
+  align-items: center;
 }
 section .container .contact_info .info li span:nth-child(1) {
   width: 30px;
@@ -164,7 +164,7 @@ section .container .contact_form .form_box .input_box textarea:valid ~ span {
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 1px;
-  color: #ff568c;
+  color: #0f3959;
 }
 section .container .contact_form .form_box .input_box input[type='submit'] {
   position: relative;
@@ -182,6 +182,6 @@ section
   .form_box
   .input_box
   input[type='submit']:hover {
-  background-color: #ff568c;
+  background-color: #0f3959;
   transition: 0.5s;
 }
